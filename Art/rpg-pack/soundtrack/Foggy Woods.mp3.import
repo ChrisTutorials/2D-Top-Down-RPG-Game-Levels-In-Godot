@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Foggy Woods.mp3-693977d35f16b56a7ed32d5b4d903a3c.mp3str"
+
+[deps]
+
+source_file="res://Art/rpg-pack/soundtrack/Foggy Woods.mp3"
+dest_files=[ "res://.import/Foggy Woods.mp3-693977d35f16b56a7ed32d5b4d903a3c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Windless Slopes.mp3-44f4a8d6945f82c1faf0cb20170a9e41.mp3str"
+
+[deps]
+
+source_file="res://Art/rpg-pack/soundtrack/Windless Slopes.mp3"
+dest_files=[ "res://.import/Windless Slopes.mp3-44f4a8d6945f82c1faf0cb20170a9e41.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

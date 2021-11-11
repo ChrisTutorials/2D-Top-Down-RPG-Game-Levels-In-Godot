@@ -1,0 +1,197 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Characters/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Objects/BarrelRed.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Objects/Inn.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Art/rpg-pack/tiles/generic-rpg-Slice.png" type="Texture" id=4]
+[ext_resource path="res://Objects/Pond.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Art/rpg-pack/props n decorations/generic-rpg-grass01.png" type="Texture" id=6]
+[ext_resource path="res://Art/rpg-pack/props n decorations/generic-rpg-grass02.png" type="Texture" id=7]
+[ext_resource path="res://Art/rpg-pack/props n decorations/generic-rpg-flowers.png" type="Texture" id=8]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 334.985, 10 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 13.2724, 202.93 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 10.4841, 204.218 )
+
+[node name="TestMap" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = -138.0
+margin_top = -92.0
+margin_right = 517.0
+margin_bottom = 335.0
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 2
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackgroundDetails" type="Node2D" parent="."]
+
+[node name="generic-rpg-grass01" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( 128.905, 205.294 )
+texture = ExtResource( 6 )
+
+[node name="generic-rpg-grass02" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( 311.319, 220.884 )
+texture = ExtResource( 6 )
+
+[node name="generic-rpg-grass03" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( 207.928, 168.258 )
+texture = ExtResource( 6 )
+
+[node name="generic-rpg-grass04" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( 47.3418, 80.2659 )
+texture = ExtResource( 6 )
+
+[node name="generic-rpg-grass05" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( 309.965, 53.5297 )
+texture = ExtResource( 6 )
+
+[node name="generic-rpg-grass06" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( 17.2214, 13.0871 )
+texture = ExtResource( 6 )
+
+[node name="generic-rpg-grass07" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( -44.8809, 153.706 )
+texture = ExtResource( 6 )
+
+[node name="generic-rpg-grass19" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( 254.007, -48.1595 )
+texture = ExtResource( 6 )
+
+[node name="generic-rpg-grass20" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( 431.834, 55.5245 )
+texture = ExtResource( 6 )
+
+[node name="generic-rpg-grass21" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( -88.9032, 270.133 )
+texture = ExtResource( 6 )
+
+[node name="generic-rpg-grass22" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( 270.515, 300.253 )
+texture = ExtResource( 6 )
+
+[node name="generic-rpg-grass23" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( -95.8541, 50.601 )
+texture = ExtResource( 6 )
+
+[node name="generic-rpg-grass08" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( 41.53, 199.344 )
+texture = ExtResource( 7 )
+
+[node name="generic-rpg-grass09" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( -31.4022, 71.9242 )
+texture = ExtResource( 7 )
+
+[node name="generic-rpg-grass10" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( 112.939, 8.63737 )
+texture = ExtResource( 7 )
+
+[node name="generic-rpg-grass11" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( 196.87, 91.8917 )
+texture = ExtResource( 7 )
+
+[node name="generic-rpg-grass15" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( 62.4867, -47.1259 )
+texture = ExtResource( 7 )
+
+[node name="generic-rpg-grass16" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( 406.555, -36.6996 )
+texture = ExtResource( 7 )
+
+[node name="generic-rpg-grass17" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( 453.184, 132.149 )
+texture = ExtResource( 7 )
+
+[node name="generic-rpg-grass18" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( 392.943, 297.232 )
+texture = ExtResource( 7 )
+
+[node name="generic-rpg-grass12" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( 374.716, 210.512 )
+texture = ExtResource( 7 )
+
+[node name="generic-rpg-grass13" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( 153.213, 288.013 )
+texture = ExtResource( 7 )
+
+[node name="generic-rpg-grass14" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( 3.62547, 279.045 )
+texture = ExtResource( 7 )
+
+[node name="generic-rpg-flowers2" type="Sprite" parent="BackgroundDetails"]
+position = Vector2( 264.895, 46.8802 )
+texture = ExtResource( 8 )
+
+[node name="YSort" type="YSort" parent="."]
+
+[node name="Player" parent="YSort" instance=ExtResource( 1 )]
+position = Vector2( 168.104, 124.703 )
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/Player"]
+remote_path = NodePath("../../../Camera2D")
+
+[node name="BarrelRed" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 225.277, 124.817 )
+
+[node name="BarrelRed2" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 110.963, 121.132 )
+
+[node name="BarrelRed3" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 11.4699, 118.827 )
+
+[node name="BarrelRed4" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 169.545, 172.992 )
+
+[node name="BarrelRed5" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 58.7195, 173.76 )
+
+[node name="Inn" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 195.892, 57.6214 )
+
+[node name="Inn2" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 312.672, 174.977 )
+
+[node name="Inn3" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( -43.8134, 13.0608 )
+
+[node name="Pond0" parent="YSort" instance=ExtResource( 5 )]
+position = Vector2( 121.734, 62.169 )
+
+[node name="Pond1" parent="YSort" instance=ExtResource( 5 )]
+position = Vector2( 236.171, 247.389 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 168.104, 124.703 )
+current = true
+limit_left = -125
+limit_top = -75
+limit_right = 500
+limit_bottom = 325
+editor_draw_limits = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 182.854, -86.8916 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -139.558, 125.471 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 510.529, 127.514 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 182.084, 338.493 )
+shape = SubResource( 1 )
